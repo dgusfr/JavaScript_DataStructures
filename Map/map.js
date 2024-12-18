@@ -12,3 +12,6 @@ console.log(existeJapao); // true
 capitais.delete('França');
 const tamanho = capitais.size;
 console.log(tamanho); // 3
+for (let pais of capitais.keys()) {
+  console.log(pais);
+}
