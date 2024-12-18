@@ -14,4 +14,5 @@ frutas.forEach(fruta => console.log(fruta));
 const filtradas = frutas.filter(fruta => fruta.includes('a'));
 const emMaiusculas = frutas.map(fruta => fruta.toUpperCase());
 const concatFrutas = frutas.reduce((acc, fruta) => acc + ', ' + fruta, '');
+console.log(frutas.includes('banana'));
 
