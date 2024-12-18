@@ -21,3 +21,4 @@ const ordenadas = frutas.sort();
 const reverso = frutas.reverse();
 const vegetais = ['cenoura', 'batata'];
 const alimentos = frutas.concat(vegetais);
+frutas.splice(1, 1);
