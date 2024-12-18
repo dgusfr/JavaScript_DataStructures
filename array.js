@@ -17,3 +17,4 @@ const concatFrutas = frutas.reduce((acc, fruta) => acc + ', ' + fruta, '');
 console.log(frutas.includes('banana'));
 
 const encontrada = frutas.find(fruta => fruta.startsWith('m'));
+const ordenadas = frutas.sort();
