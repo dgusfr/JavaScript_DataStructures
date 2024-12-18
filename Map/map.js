@@ -42,3 +42,5 @@ const existeValor = [...capitais.values()].includes('Tóquio');
 console.log(existeValor); // true
 const somaValores = [...capitais.keys()].reduce((acc, chave) => acc + chave.length, 0);
 console.log(somaValores);
+const iterador = capitais.entries();
+console.log(iterador.next().value);
