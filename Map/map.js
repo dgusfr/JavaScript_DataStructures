@@ -36,3 +36,5 @@ const arrayToMap = new Map([['a', 1], ['b', 2]]);
 console.log(arrayToMap);
 const mapFiltered = new Map([...capitais].filter(([pais, capital]) => pais.startsWith('B')));
 console.log(mapFiltered);
+const mapMapped = new Map([...capitais].map(([pais, capital]) => [pais.toUpperCase(), capital]));
+console.log(mapMapped);
