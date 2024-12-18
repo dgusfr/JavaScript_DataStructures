@@ -30,3 +30,5 @@ const valoresNumericos = Array.from(capitais.values());
 console.log(valoresNumericos);
 const chavesArray = Array.from(capitais.keys());
 console.log(chavesArray);
+const mapToObject = Object.fromEntries(capitais);
+console.log(mapToObject);
