@@ -40,3 +40,5 @@ const mapMapped = new Map([...capitais].map(([pais, capital]) => [pais.toUpperCa
 console.log(mapMapped);
 const existeValor = [...capitais.values()].includes('Tóquio');
 console.log(existeValor); // true
+const somaValores = [...capitais.keys()].reduce((acc, chave) => acc + chave.length, 0);
+console.log(somaValores);
