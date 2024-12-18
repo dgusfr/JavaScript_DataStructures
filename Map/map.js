@@ -28,3 +28,5 @@ const obj = { id: 1 };
 objetosComoChave.set(obj, 'Objeto associado');
 const valoresNumericos = Array.from(capitais.values());
 console.log(valoresNumericos);
+const chavesArray = Array.from(capitais.keys());
+console.log(chavesArray);
