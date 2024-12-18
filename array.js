@@ -6,4 +6,7 @@ frutas.shift();
 console.log(frutas[1]);
 frutas[1] = 'manga';
 console.log(frutas.length);
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
 
