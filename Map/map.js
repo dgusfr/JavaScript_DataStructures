@@ -38,3 +38,5 @@ const mapFiltered = new Map([...capitais].filter(([pais, capital]) => pais.start
 console.log(mapFiltered);
 const mapMapped = new Map([...capitais].map(([pais, capital]) => [pais.toUpperCase(), capital]));
 console.log(mapMapped);
+const existeValor = [...capitais.values()].includes('Tóquio');
+console.log(existeValor); // true
