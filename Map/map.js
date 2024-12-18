@@ -5,3 +5,5 @@ const capitais = new Map([
   ['Japão', 'Tóquio']
 ]);
 capitais.set('Canadá', 'Ottawa');
+const capitalBrasil = capitais.get('Brasil');
+console.log(capitalBrasil); // Brasília
