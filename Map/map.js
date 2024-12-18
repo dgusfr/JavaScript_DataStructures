@@ -15,3 +15,6 @@ console.log(tamanho); // 3
 for (let pais of capitais.keys()) {
   console.log(pais);
 }
+for (let capital of capitais.values()) {
+  console.log(capital);
+}
