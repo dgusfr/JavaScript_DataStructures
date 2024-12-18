@@ -34,3 +34,5 @@ const mapToObject = Object.fromEntries(capitais);
 console.log(mapToObject);
 const arrayToMap = new Map([['a', 1], ['b', 2]]);
 console.log(arrayToMap);
+const mapFiltered = new Map([...capitais].filter(([pais, capital]) => pais.startsWith('B')));
+console.log(mapFiltered);
