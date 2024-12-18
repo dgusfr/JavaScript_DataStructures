@@ -26,3 +26,5 @@ const copia = new Map(capitais);
 const objetosComoChave = new Map();
 const obj = { id: 1 };
 objetosComoChave.set(obj, 'Objeto associado');
+const valoresNumericos = Array.from(capitais.values());
+console.log(valoresNumericos);
