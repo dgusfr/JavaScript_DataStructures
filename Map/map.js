@@ -32,3 +32,5 @@ const chavesArray = Array.from(capitais.keys());
 console.log(chavesArray);
 const mapToObject = Object.fromEntries(capitais);
 console.log(mapToObject);
+const arrayToMap = new Map([['a', 1], ['b', 2]]);
+console.log(arrayToMap);
