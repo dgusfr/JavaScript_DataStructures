@@ -24,3 +24,4 @@ const alimentos = frutas.concat(vegetais);
 frutas.splice(1, 1);
 const fatia = frutas.slice(1, 3);
 const comoString = frutas.join(', ');
+const preenchido = new Array(5).fill('abacate');
