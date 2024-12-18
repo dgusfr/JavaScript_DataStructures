@@ -10,3 +10,5 @@ console.log(capitalBrasil); // Brasília
 const existeJapao = capitais.has('Japão');
 console.log(existeJapao); // true
 capitais.delete('França');
+const tamanho = capitais.size;
+console.log(tamanho); // 3
