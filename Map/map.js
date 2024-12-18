@@ -18,3 +18,6 @@ for (let pais of capitais.keys()) {
 for (let capital of capitais.values()) {
   console.log(capital);
 }
+for (let [pais, capital] of capitais.entries()) {
+  console.log(`${pais}: ${capital}`);
+}
