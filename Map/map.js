@@ -4,3 +4,4 @@ const capitais = new Map([
   ['França', 'Paris'],
   ['Japão', 'Tóquio']
 ]);
+capitais.set('Canadá', 'Ottawa');
