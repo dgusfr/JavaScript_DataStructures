@@ -18,3 +18,4 @@ console.log(frutas.includes('banana'));
 
 const encontrada = frutas.find(fruta => fruta.startsWith('m'));
 const ordenadas = frutas.sort();
+const reverso = frutas.reverse();
