@@ -5,4 +5,4 @@ frutas.unshift('abacaxi');
 frutas.shift();
 console.log(frutas[1]);
 frutas[1] = 'manga';
-
+console.log(frutas.length);
