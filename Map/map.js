@@ -22,3 +22,4 @@ for (let [pais, capital] of capitais.entries()) {
   console.log(`${pais}: ${capital}`);
 }
 capitais.clear();
+const copia = new Map(capitais);
