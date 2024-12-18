@@ -16,3 +16,4 @@ const emMaiusculas = frutas.map(fruta => fruta.toUpperCase());
 const concatFrutas = frutas.reduce((acc, fruta) => acc + ', ' + fruta, '');
 console.log(frutas.includes('banana'));
 
+const encontrada = frutas.find(fruta => fruta.startsWith('m'));
