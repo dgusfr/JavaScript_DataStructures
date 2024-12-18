@@ -22,3 +22,4 @@ const reverso = frutas.reverse();
 const vegetais = ['cenoura', 'batata'];
 const alimentos = frutas.concat(vegetais);
 frutas.splice(1, 1);
+const fatia = frutas.slice(1, 3);
