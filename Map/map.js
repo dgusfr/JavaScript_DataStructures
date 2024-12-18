@@ -1,0 +1,1 @@
+const meuMap = new Map();
