@@ -7,3 +7,5 @@ const capitais = new Map([
 capitais.set('Canadá', 'Ottawa');
 const capitalBrasil = capitais.get('Brasil');
 console.log(capitalBrasil); // Brasília
+const existeJapao = capitais.has('Japão');
+console.log(existeJapao); // true
