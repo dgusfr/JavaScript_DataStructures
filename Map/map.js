@@ -9,3 +9,4 @@ const capitalBrasil = capitais.get('Brasil');
 console.log(capitalBrasil); // Brasília
 const existeJapao = capitais.has('Japão');
 console.log(existeJapao); // true
+capitais.delete('França');
