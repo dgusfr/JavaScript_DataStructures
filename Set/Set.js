@@ -36,3 +36,5 @@ const objetos = new Set();
 const objeto = { id: 1 };
 objetos.add(objeto);
 console.log(objetos.has(objeto)); // true
+const misto = new Set([1, 'a', { id: 1 }]);
+console.log(misto);
