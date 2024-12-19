@@ -42,3 +42,6 @@ const igualdade = new Set();
 igualdade.add('1');
 igualdade.add(1);
 console.log(igualdade.size); // 2
+const nomes = new Set(['João', 'Maria']);
+const nomesUnidos = new Set([...nomes, 'Pedro']);
+console.log(nomesUnidos);
