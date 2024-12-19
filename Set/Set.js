@@ -12,3 +12,7 @@ for (let numero of numeros) {
 }
 const uniao = new Set([...numeros, ...[6, 7, 8]]);
 console.log(uniao);
+const conjuntoA = new Set([1, 2, 3]);
+const conjuntoB = new Set([2, 3, 4]);
+const interseccao = new Set([...conjuntoA].filter(x => conjuntoB.has(x)));
+console.log(interseccao);
