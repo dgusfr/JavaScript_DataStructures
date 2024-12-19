@@ -16,3 +16,5 @@ const conjuntoA = new Set([1, 2, 3]);
 const conjuntoB = new Set([2, 3, 4]);
 const interseccao = new Set([...conjuntoA].filter(x => conjuntoB.has(x)));
 console.log(interseccao);
+const diferenca = new Set([...conjuntoA].filter(x => !conjuntoB.has(x)));
+console.log(diferenca);
