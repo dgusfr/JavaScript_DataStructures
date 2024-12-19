@@ -26,3 +26,5 @@ console.log(setConvertido);
 const duplicados = [1, 2, 3, 3, 4, 4];
 const unico = new Set(duplicados);
 console.log([...unico]); // [1, 2, 3, 4]
+const palavras = new Set(['maçã', 'banana', 'laranja']);
+palavras.forEach(palavra => console.log(palavra));
