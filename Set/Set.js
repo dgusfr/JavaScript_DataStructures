@@ -23,3 +23,6 @@ console.log(arrayConvertido);
 const setConvertido = new Set([1, 2, 3, 4]);
 console.log(setConvertido);
 
+const duplicados = [1, 2, 3, 3, 4, 4];
+const unico = new Set(duplicados);
+console.log([...unico]); // [1, 2, 3, 4]
