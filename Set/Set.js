@@ -5,3 +5,5 @@ numeros.delete(3);
 const existe = numeros.has(2);
 console.log(existe); // true
 numeros.clear();
+const tamanho = numeros.size;
+console.log(tamanho); // 0
