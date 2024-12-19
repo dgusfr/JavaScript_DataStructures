@@ -32,3 +32,7 @@ const valores = [...numeros.values()];
 console.log(valores);
 const novoSet = new Set(['a', 'b', 'c']);
 console.log(novoSet.has('a')); // true
+const objetos = new Set();
+const objeto = { id: 1 };
+objetos.add(objeto);
+console.log(objetos.has(objeto)); // true
