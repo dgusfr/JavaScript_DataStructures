@@ -10,3 +10,5 @@ console.log(tamanho); // 0
 for (let numero of numeros) {
   console.log(numero);
 }
+const uniao = new Set([...numeros, ...[6, 7, 8]]);
+console.log(uniao);
