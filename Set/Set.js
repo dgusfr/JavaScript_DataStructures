@@ -7,3 +7,6 @@ console.log(existe); // true
 numeros.clear();
 const tamanho = numeros.size;
 console.log(tamanho); // 0
+for (let numero of numeros) {
+  console.log(numero);
+}
