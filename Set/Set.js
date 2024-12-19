@@ -4,3 +4,4 @@ numeros.add(5);
 numeros.delete(3);
 const existe = numeros.has(2);
 console.log(existe); // true
+numeros.clear();
