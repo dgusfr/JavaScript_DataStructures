@@ -28,3 +28,5 @@ const unico = new Set(duplicados);
 console.log([...unico]); // [1, 2, 3, 4]
 const palavras = new Set(['maçã', 'banana', 'laranja']);
 palavras.forEach(palavra => console.log(palavra));
+const valores = [...numeros.values()];
+console.log(valores);
