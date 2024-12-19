@@ -38,3 +38,7 @@ objetos.add(objeto);
 console.log(objetos.has(objeto)); // true
 const misto = new Set([1, 'a', { id: 1 }]);
 console.log(misto);
+const igualdade = new Set();
+igualdade.add('1');
+igualdade.add(1);
+console.log(igualdade.size); // 2
