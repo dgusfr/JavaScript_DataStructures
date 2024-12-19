@@ -48,3 +48,7 @@ console.log(nomesUnidos);
 const multiplos = new Set([2, 4, 6, 8]);
 const transformados = new Set([...multiplos].map(x => x * 2));
 console.log(transformados);
+const multiplos = new Set([2, 4, 6, 8]);
+const transformados = new Set([...multiplos].map(x => x * 2));
+console.log(transformados);
+
