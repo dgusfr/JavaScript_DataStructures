@@ -30,3 +30,5 @@ const palavras = new Set(['maçã', 'banana', 'laranja']);
 palavras.forEach(palavra => console.log(palavra));
 const valores = [...numeros.values()];
 console.log(valores);
+const novoSet = new Set(['a', 'b', 'c']);
+console.log(novoSet.has('a')); // true
