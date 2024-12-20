@@ -207,3 +207,12 @@ LinkedList.prototype.appendList = function (list) {
   }
   this.size += list.size;
 };
+LinkedList.prototype.clone = function () {
+  const clonedList = new LinkedList();
+  let current = this.head;
+  while (current) {
+      clonedList.addLast(current.value);
+      current = current.next;
+  }
+  return clonedList;
+};
