@@ -229,3 +229,22 @@ LinkedList.prototype.getNthFromEnd = function (n) {
   }
   return slow;
 };
+LinkedList.prototype.splitList = function () {
+  const middle = this.getMiddle();
+  if (!middle) return [null, null];
+
+  const secondList = new LinkedList();
+  secondList.head = middle.next;
+  secondList.tail = this.tail;
+
+  middle.next = null;
+  this.tail = middle;
+
+  let current = secondList.head;
+  while (current) {
+      secondList.size++;
+      current = current.next;
+  }
+
+  return [this, secondList];
+};
