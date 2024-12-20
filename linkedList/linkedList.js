@@ -133,3 +133,6 @@ LinkedList.prototype.toArray = function () {
 LinkedList.prototype.fromArray = function (arr) {
   arr.forEach(value => this.addLast(value));
 };
+LinkedList.prototype.contains = function (value) {
+  return this.find(value) !== null;
+};
