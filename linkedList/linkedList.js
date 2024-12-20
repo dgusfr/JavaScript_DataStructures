@@ -270,3 +270,18 @@ LinkedList.prototype.deleteByValue = function (value) {
 
   return null;
 };
+LinkedList.prototype.rotate = function (k) {
+  if (this.isEmpty() || k <= 0 || k >= this.size) return;
+
+  let current = this.head;
+  let count = 1;
+  while (count < k && current) {
+      current = current.next;
+      count++;
+  }
+
+  const newHead = current.next;
+  current.next = null;
+  this.tail.next = this.head;
+  this.head = newHead;
+};
