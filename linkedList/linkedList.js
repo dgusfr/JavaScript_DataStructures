@@ -34,3 +34,10 @@ LinkedList.prototype.addLast = function (value) {
   }
   this.size++;
 };
+LinkedList.prototype.printList = function () {
+  let current = this.head;
+  while (current) {
+      console.log(current.value);
+      current = current.next;
+  }
+};
