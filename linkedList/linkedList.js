@@ -87,3 +87,16 @@ LinkedList.prototype.reverse = function () {
   }
   this.head = prev;
 };
+LinkedList.prototype.insertAt = function (index, value) {
+  if (index < 0 || index > this.size) return false;
+  if (index === 0) return this.addFirst(value);
+  if (index === this.size) return this.addLast(value);
+  const newNode = new Node(value);
+  let current = this.head;
+  for (let i = 0; i < index - 1; i++) {
+      current = current.next;
+  }
+  newNode.next = current.next;
+  current.next = newNode;
+  this.size++;
+};
