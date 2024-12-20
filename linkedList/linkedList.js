@@ -11,3 +11,6 @@ class LinkedList {
       this.size = 0;
   }
 }
+LinkedList.prototype.isEmpty = function () {
+  return this.size === 0;
+};
