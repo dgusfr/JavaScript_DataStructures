@@ -14,3 +14,13 @@ class LinkedList {
 LinkedList.prototype.isEmpty = function () {
   return this.size === 0;
 };
+LinkedList.prototype.addFirst = function (value) {
+  const newNode = new Node(value);
+  if (this.isEmpty()) {
+      this.head = this.tail = newNode;
+  } else {
+      newNode.next = this.head;
+      this.head = newNode;
+  }
+  this.size++;
+};
