@@ -248,3 +248,25 @@ LinkedList.prototype.splitList = function () {
 
   return [this, secondList];
 };
+LinkedList.prototype.deleteByValue = function (value) {
+  if (this.isEmpty()) return null;
+
+  if (this.head.value === value) {
+      return this.removeFirst();
+  }
+
+  let current = this.head;
+  while (current.next && current.next.value !== value) {
+      current = current.next;
+  }
+
+  if (current.next) {
+      const removedValue = current.next.value;
+      current.next = current.next.next;
+      if (!current.next) this.tail = current;
+      this.size--;
+      return removedValue;
+  }
+
+  return null;
+};
