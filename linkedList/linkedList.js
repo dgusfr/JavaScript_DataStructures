@@ -182,3 +182,18 @@ LinkedList.prototype.mergeSorted = function (list) {
   current.next = a || b;
   this.head = dummy.next;
 };
+LinkedList.prototype.removeDuplicates = function () {
+  const seen = new Set();
+  let current = this.head;
+  let prev = null;
+  while (current) {
+      if (seen.has(current.value)) {
+          prev.next = current.next;
+          this.size--;
+      } else {
+          seen.add(current.value);
+          prev = current;
+      }
+      current = current.next;
+  }
+};
