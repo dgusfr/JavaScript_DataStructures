@@ -41,3 +41,11 @@ LinkedList.prototype.printList = function () {
       current = current.next;
   }
 };
+LinkedList.prototype.removeFirst = function () {
+  if (this.isEmpty()) return null;
+  const removedValue = this.head.value;
+  this.head = this.head.next;
+  this.size--;
+  if (this.isEmpty()) this.tail = null;
+  return removedValue;
+};
