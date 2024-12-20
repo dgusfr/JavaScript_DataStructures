@@ -100,3 +100,16 @@ LinkedList.prototype.insertAt = function (index, value) {
   current.next = newNode;
   this.size++;
 };
+LinkedList.prototype.removeAt = function (index) {
+  if (index < 0 || index >= this.size) return null;
+  if (index === 0) return this.removeFirst();
+  if (index === this.size - 1) return this.removeLast();
+  let current = this.head;
+  for (let i = 0; i < index - 1; i++) {
+      current = current.next;
+  }
+  const removedValue = current.next.value;
+  current.next = current.next.next;
+  this.size--;
+  return removedValue;
+};
