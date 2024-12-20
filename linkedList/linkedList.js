@@ -121,3 +121,12 @@ LinkedList.prototype.getAt = function (index) {
   }
   return current;
 };
+LinkedList.prototype.toArray = function () {
+  const result = [];
+  let current = this.head;
+  while (current) {
+      result.push(current.value);
+      current = current.next;
+  }
+  return result;
+};
