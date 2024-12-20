@@ -304,3 +304,15 @@ LinkedList.prototype.removeAll = function (value) {
       this.tail = current;
   }
 };
+LinkedList.prototype.countOccurrences = function (value) {
+  let count = 0;
+  let current = this.head;
+
+  while (current) {
+      if (current.value === value) count++;
+      current = current.next;
+  }
+
+  return count;
+};
+
