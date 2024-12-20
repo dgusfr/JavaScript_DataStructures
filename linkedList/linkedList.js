@@ -75,3 +75,15 @@ LinkedList.prototype.find = function (value) {
   }
   return null;
 };
+LinkedList.prototype.reverse = function () {
+  let prev = null;
+  let current = this.head;
+  this.tail = this.head;
+  while (current) {
+      const next = current.next;
+      current.next = prev;
+      prev = current;
+      current = next;
+  }
+  this.head = prev;
+};
