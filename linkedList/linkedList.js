@@ -130,3 +130,6 @@ LinkedList.prototype.toArray = function () {
   }
   return result;
 };
+LinkedList.prototype.fromArray = function (arr) {
+  arr.forEach(value => this.addLast(value));
+};
