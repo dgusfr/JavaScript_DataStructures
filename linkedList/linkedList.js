@@ -156,3 +156,11 @@ LinkedList.prototype.detectCycle = function () {
   }
   return false;
 };
+LinkedList.prototype.sort = function () {
+  const arr = this.toArray();
+  arr.sort((a, b) => a - b);
+  this.head = null;
+  this.tail = null;
+  this.size = 0;
+  this.fromArray(arr);
+};
