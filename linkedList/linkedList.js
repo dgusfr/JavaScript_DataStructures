@@ -136,3 +136,13 @@ LinkedList.prototype.fromArray = function (arr) {
 LinkedList.prototype.contains = function (value) {
   return this.find(value) !== null;
 };
+LinkedList.prototype.getMiddle = function () {
+  if (this.isEmpty()) return null;
+  let slow = this.head;
+  let fast = this.head;
+  while (fast && fast.next) {
+      slow = slow.next;
+      fast = fast.next.next;
+  }
+  return slow;
+};
