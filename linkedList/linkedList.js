@@ -197,3 +197,13 @@ LinkedList.prototype.removeDuplicates = function () {
       current = current.next;
   }
 };
+LinkedList.prototype.appendList = function (list) {
+  if (this.isEmpty()) {
+      this.head = list.head;
+      this.tail = list.tail;
+  } else if (!list.isEmpty()) {
+      this.tail.next = list.head;
+      this.tail = list.tail;
+  }
+  this.size += list.size;
+};
