@@ -67,3 +67,11 @@ LinkedList.prototype.removeLast = function () {
   this.size--;
   return removedValue;
 };
+LinkedList.prototype.find = function (value) {
+  let current = this.head;
+  while (current) {
+      if (current.value === value) return current;
+      current = current.next;
+  }
+  return null;
+};
