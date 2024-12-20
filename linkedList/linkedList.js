@@ -316,3 +316,20 @@ LinkedList.prototype.countOccurrences = function (value) {
   return count;
 };
 
+LinkedList.prototype.findIntersection = function (list) {
+  const nodesSet = new Set();
+
+  let current = this.head;
+  while (current) {
+      nodesSet.add(current);
+      current = current.next;
+  }
+
+  current = list.head;
+  while (current) {
+      if (nodesSet.has(current)) return current;
+      current = current.next;
+  }
+
+  return null;
+};
