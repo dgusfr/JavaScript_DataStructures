@@ -24,3 +24,13 @@ LinkedList.prototype.addFirst = function (value) {
   }
   this.size++;
 };
+LinkedList.prototype.addLast = function (value) {
+  const newNode = new Node(value);
+  if (this.isEmpty()) {
+      this.head = this.tail = newNode;
+  } else {
+      this.tail.next = newNode;
+      this.tail = newNode;
+  }
+  this.size++;
+};
