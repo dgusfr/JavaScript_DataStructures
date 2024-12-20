@@ -49,3 +49,21 @@ LinkedList.prototype.removeFirst = function () {
   if (this.isEmpty()) this.tail = null;
   return removedValue;
 };
+LinkedList.prototype.removeLast = function () {
+  if (this.isEmpty()) return null;
+  if (this.size === 1) {
+      const removedValue = this.head.value;
+      this.head = this.tail = null;
+      this.size--;
+      return removedValue;
+  }
+  let current = this.head;
+  while (current.next !== this.tail) {
+      current = current.next;
+  }
+  const removedValue = this.tail.value;
+  this.tail = current;
+  this.tail.next = null;
+  this.size--;
+  return removedValue;
+};
