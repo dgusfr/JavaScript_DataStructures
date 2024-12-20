@@ -164,3 +164,21 @@ LinkedList.prototype.sort = function () {
   this.size = 0;
   this.fromArray(arr);
 };
+LinkedList.prototype.mergeSorted = function (list) {
+  const dummy = new Node(0);
+  let current = dummy;
+  let a = this.head;
+  let b = list.head;
+  while (a && b) {
+      if (a.value < b.value) {
+          current.next = a;
+          a = a.next;
+      } else {
+          current.next = b;
+          b = b.next;
+      }
+      current = current.next;
+  }
+  current.next = a || b;
+  this.head = dummy.next;
+};
