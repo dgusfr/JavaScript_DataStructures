@@ -216,3 +216,16 @@ LinkedList.prototype.clone = function () {
   }
   return clonedList;
 };
+LinkedList.prototype.getNthFromEnd = function (n) {
+  if (n <= 0 || n > this.size) return null;
+  let slow = this.head;
+  let fast = this.head;
+  for (let i = 0; i < n; i++) {
+      fast = fast.next;
+  }
+  while (fast) {
+      slow = slow.next;
+      fast = fast.next;
+  }
+  return slow;
+};
