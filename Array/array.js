@@ -15,3 +15,12 @@ const reprovados = alunos.filter((aluno, indice) =>{
   return medias[indice] < 7 
 })
 console.log(reprovados)
+
+function SomaNo(notas){
+  const soma = notas.reduce((acumulador, nota) => {
+    return acumulador + nota
+  })
+
+}
+
+console.log(calculaMedia([10, 8, 9, 7, 6]))
