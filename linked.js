@@ -100,4 +100,39 @@ LinkedList.prototype.containsDuplicate = function () {
 
   return count;
 };
+LinkedList.prototype.swapNodes = function (x, y) {
+  if (x === y) return;
+
+  let prevX = null;
+  let currX = this.head;
+  while (currX && currX.value !== x) {
+      prevX = currX;
+      currX = currX.next;
+  }
+
+  let prevY = null;
+  let currY = this.head;
+  while (currY && currY.value !== y) {
+      prevY = currY;
+      currY = currY.next;
+  }
+
+  if (!currX || !currY) return;
+
+  if (prevX) {
+      prevX.next = currY;
+  } else {
+      this.head = currY;
+  }
+
+  if (prevY) {
+      prevY.next = currX;
+  } else {
+      this.head = currX;
+  }
+
+  const temp = currX.next;
+  currX.next = currY.next;
+  currY.next = temp;
+};
 
