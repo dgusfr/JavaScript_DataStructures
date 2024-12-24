@@ -37,3 +37,8 @@ LinkedList.prototype.toString = function () {
   }
   return result;
 };
+LinkedList.prototype.removeAllNodes = function () {
+  this.head = null;
+  this.tail = null;
+  this.size = 0;
+};
