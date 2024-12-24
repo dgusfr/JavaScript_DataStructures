@@ -210,3 +210,22 @@ LinkedList.prototype.partition = function (x) {
   this.tail = greaterList.tail || smallerList.tail;
   this.size = smallerList.size + greaterList.size;
 };
+LinkedList.prototype.deleteMiddle = function () {
+  if (this.size <= 1) {
+      this.removeFirst();
+      return;
+  }
+
+  let slow = this.head;
+  let fast = this.head;
+  let prev = null;
+
+  while (fast && fast.next) {
+      prev = slow;
+      slow = slow.next;
+      fast = fast.next.next;
+  }
+
+  prev.next = slow.next;
+  this.size--;
+};
