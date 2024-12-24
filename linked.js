@@ -72,3 +72,13 @@ LinkedList.prototype.reverseInGroups = function (k) {
       prev = lastNodeOfSubList;
   }
 };
+LinkedList.prototype.containsDuplicate = function () {
+  const seen = new Set();
+  let current = this.head;
+  while (current) {
+      if (seen.has(current.value)) return true;
+      seen.add(current.value);
+      current = current.next;
+  }
+  return false;
+};
