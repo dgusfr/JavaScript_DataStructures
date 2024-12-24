@@ -135,4 +135,28 @@ LinkedList.prototype.swapNodes = function (x, y) {
   currX.next = currY.next;
   currY.next = temp;
 };
+LinkedList.prototype.rotateRight = function (k) {
+  if (!this.head || k <= 0) return;
+
+  let length = this.size;
+  k = k % length;
+
+  if (k === 0) return;
+
+  let fast = this.head;
+  let slow = this.head;
+
+  for (let i = 0; i < k; i++) {
+      fast = fast.next;
+  }
+
+  while (fast.next) {
+      slow = slow.next;
+      fast = fast.next;
+  }
+
+  fast.next = this.head;
+  this.head = slow.next;
+  slow.next = null;
+};
 
