@@ -159,4 +159,12 @@ LinkedList.prototype.rotateRight = function (k) {
   this.head = slow.next;
   slow.next = null;
 };
+LinkedList.prototype.isSorted = function () {
+  let current = this.head;
+  while (current && current.next) {
+      if (current.value > current.next.value) return false;
+      current = current.next;
+  }
+  return true;
+};
 
