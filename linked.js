@@ -81,4 +81,23 @@ LinkedList.prototype.containsDuplicate = function () {
       current = current.next;
   }
   return false;
+};LinkedList.prototype.lengthOfCycle = function () {
+  if (!this.hasCycle()) return 0;
+
+  let slow = this.head;
+  let fast = this.head;
+  while (fast && fast.next) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (slow === fast) break;
+  }
+
+  let count = 0;
+  do {
+      slow = slow.next;
+      count++;
+  } while (slow !== fast);
+
+  return count;
 };
+
