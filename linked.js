@@ -42,3 +42,33 @@ LinkedList.prototype.removeAllNodes = function () {
   this.tail = null;
   this.size = 0;
 };
+LinkedList.prototype.reverseInGroups = function (k) {
+  if (k <= 1 || this.isEmpty()) return;
+
+  let current = this.head;
+  let prev = null;
+
+  while (current) {
+      let lastNodeOfPrevPart = prev;
+      let lastNodeOfSubList = current;
+      let next = null;
+      let i = 0;
+
+      while (current && i < k) {
+          next = current.next;
+          current.next = prev;
+          prev = current;
+          current = next;
+          i++;
+      }
+
+      if (!lastNodeOfPrevPart) {
+          this.head = prev;
+      } else {
+          lastNodeOfPrevPart.next = prev;
+      }
+
+      lastNodeOfSubList.next = current;
+      prev = lastNodeOfSubList;
+  }
+};
