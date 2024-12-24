@@ -229,3 +229,22 @@ LinkedList.prototype.deleteMiddle = function () {
   prev.next = slow.next;
   this.size--;
 };
+LinkedList.prototype.removeGreaterThan = function (value) {
+  while (this.head && this.head.value > value) {
+      this.removeFirst();
+  }
+
+  let current = this.head;
+  while (current && current.next) {
+      if (current.next.value > value) {
+          current.next = current.next.next;
+          this.size--;
+      } else {
+          current = current.next;
+      }
+  }
+
+  if (this.tail && this.tail.value > value) {
+      this.tail = current;
+  }
+};
