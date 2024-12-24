@@ -28,3 +28,12 @@ LinkedList.prototype.removeCycle = function () {
 
   fast.next = null;
 };
+LinkedList.prototype.toString = function () {
+  let result = '';
+  let current = this.head;
+  while (current) {
+      result += `${current.value}${current.next ? ' -> ' : ''}`;
+      current = current.next;
+  }
+  return result;
+};
