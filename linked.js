@@ -248,3 +248,26 @@ LinkedList.prototype.removeGreaterThan = function (value) {
       this.tail = current;
   }
 };
+LinkedList.prototype.partition = function (x) {
+  const smallerList = new LinkedList();
+  const greaterList = new LinkedList();
+
+  let current = this.head;
+
+  while (current) {
+      if (current.value < x) {
+          smallerList.addLast(current.value);
+      } else {
+          greaterList.addLast(current.value);
+      }
+      current = current.next;
+  }
+
+  if (smallerList.tail) {
+      smallerList.tail.next = greaterList.head;
+  }
+
+  this.head = smallerList.head || greaterList.head;
+  this.tail = greaterList.tail || smallerList.tail;
+  this.size = smallerList.size + greaterList.size;
+};
