@@ -1,11 +1,4 @@
-// Importa o módulo readline para interagir com o usuário
-const readline = require("readline");
 
-// Cria a interface de leitura
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
 
 // Função para exibir o menu de opções
 function displayMenu() {
