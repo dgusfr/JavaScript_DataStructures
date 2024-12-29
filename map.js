@@ -25,6 +25,17 @@ function startCLI() {
   performOperation();
 }
 
+function addKeyValue() {
+  rl.question("Digite a chave: ", (key) => {
+      rl.question("Digite o valor: ", (value) => {
+          myMap.set(key, value);
+          console.log(`Par adicionado: {${key}: ${value}}`);
+          performOperation();
+      });
+  });
+}
+
+
 function performOperation() {
   displayMenu();
   rl.question("Digite a opção desejada: ", (option) => {
