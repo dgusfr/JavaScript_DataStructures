@@ -22,3 +22,9 @@ Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite g
     <img src="img/node.png" alt="Logo Linguagem" width="100"/>
   </div>
 </div>
+
+## Status
+
+![Em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge)
+
+<!-- -->
