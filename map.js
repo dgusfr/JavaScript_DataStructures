@@ -99,6 +99,12 @@ function checkValueExists() {
   });
 }
 
+function clearMap() {
+  myMap.clear();
+  console.log("O Map foi limpo com sucesso.");
+  performOperation();
+}
+
 
 
 function performOperation() {
