@@ -30,3 +30,13 @@ Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite g
 ## Descrição
 
 Este projeto oferece uma maneira prática e interativa de gerenciar pares chave-valor no terminal. Ele utiliza o módulo `readline` para capturar entradas do usuário e executar ações no **Map**, permitindo manipulações como adicionar, atualizar, remover, listar e verificar a existência de chaves e valores.
+
+## Funcionalidades
+
+- **Adicionar pares chave-valor:** Insere uma nova chave com um valor associado no Map.
+- **Remover uma chave:** Elimina uma chave e seu valor associado.
+- **Atualizar valores:** Atualiza o valor de uma chave existente.
+- **Listar todas as entradas:** Exibe todos os pares chave-valor armazenados.
+- **Verificar existência de chave ou valor:** Verifica se uma chave ou valor está presente no Map.
+- **Limpar o Map:** Remove todos os pares chave-valor.
+- **Encerrar:** Finaliza a execução da CLI.
