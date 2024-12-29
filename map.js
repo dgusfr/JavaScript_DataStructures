@@ -61,6 +61,17 @@ function updateValue() {
   });
 }
 
+function getValue() {
+  rl.question("Digite a chave para obter o valor: ", (key) => {
+      if (myMap.has(key)) {
+          console.log(`Valor associado à chave "${key}": ${myMap.get(key)}`);
+      } else {
+          console.log(`Chave "${key}" não encontrada.`);
+      }
+      performOperation();
+  });
+}
+
 
 
 function performOperation() {
