@@ -72,6 +72,18 @@ function getValue() {
   });
 }
 
+function listEntries() {
+  if (myMap.size === 0) {
+      console.log("O Map está vazio.");
+  } else {
+      console.log("Entradas no Map:");
+      myMap.forEach((value, key) => {
+          console.log(`{${key}: ${value}}`);
+      });
+  }
+  performOperation();
+}
+
 
 
 function performOperation() {
