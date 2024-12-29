@@ -27,4 +27,6 @@ Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite g
 
 ![Em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge)
 
-<!-- -->
+## Descrição
+
+Este projeto oferece uma maneira prática e interativa de gerenciar pares chave-valor no terminal. Ele utiliza o módulo `readline` para capturar entradas do usuário e executar ações no **Map**, permitindo manipulações como adicionar, atualizar, remover, listar e verificar a existência de chaves e valores.
