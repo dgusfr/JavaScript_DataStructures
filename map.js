@@ -35,6 +35,18 @@ function addKeyValue() {
   });
 }
 
+function removeKey() {
+  rl.question("Digite a chave para remover: ", (key) => {
+      if (myMap.delete(key)) {
+          console.log(`Chave "${key}" removida com sucesso.`);
+      } else {
+          console.log(`Chave "${key}" não encontrada.`);
+      }
+      performOperation();
+  });
+}
+
+
 
 function performOperation() {
   displayMenu();
