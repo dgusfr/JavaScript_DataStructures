@@ -17,3 +17,5 @@ function displayMenu() {
   console.log("8. Limpar o Map");
   console.log("9. Sair\n");
 }
+
+const myMap = new Map();
