@@ -16,7 +16,7 @@ Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite g
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="images/js.png" alt="Logo Linguagem" width="100"/>
+    <img src="images/js.png" alt="Logo Linguagem" width="200"/>
   </div>
 </div>
 
