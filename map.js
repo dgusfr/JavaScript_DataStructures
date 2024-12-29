@@ -110,8 +110,6 @@ function exitCLI() {
   rl.close();
 }
 
-
-
 function performOperation() {
   displayMenu();
   rl.question("Digite a opção desejada: ", (option) => {
@@ -150,3 +148,6 @@ function performOperation() {
       }
   });
 }
+
+startCLI();
+
