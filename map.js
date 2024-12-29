@@ -19,3 +19,8 @@ function displayMenu() {
 }
 
 const myMap = new Map();
+
+function startCLI() {
+  console.log("Bem-vindo! Comece a gerenciar seu Map.");
+  performOperation();
+}
