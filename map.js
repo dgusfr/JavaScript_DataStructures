@@ -46,6 +46,21 @@ function removeKey() {
   });
 }
 
+function updateValue() {
+  rl.question("Digite a chave para atualizar: ", (key) => {
+      if (myMap.has(key)) {
+          rl.question("Digite o novo valor: ", (newValue) => {
+              myMap.set(key, newValue);
+              console.log(`Valor atualizado: {${key}: ${newValue}}`);
+              performOperation();
+          });
+      } else {
+          console.log(`Chave "${key}" não encontrada.`);
+          performOperation();
+      }
+  });
+}
+
 
 
 function performOperation() {
