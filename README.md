@@ -45,3 +45,6 @@ Este projeto oferece uma maneira prática e interativa de gerenciar pares chave-
 
 - **Node.js**: Ambiente de execução JavaScript para rodar o projeto.
 - **readline**: Módulo nativo do Node.js utilizado para capturar interações no terminal.
+
+## Autor
+Desenvolvido por Diego Franco
