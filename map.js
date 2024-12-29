@@ -24,3 +24,42 @@ function startCLI() {
   console.log("Bem-vindo! Comece a gerenciar seu Map.");
   performOperation();
 }
+
+function performOperation() {
+  displayMenu();
+  rl.question("Digite a opção desejada: ", (option) => {
+      switch (option) {
+          case "1":
+              addKeyValue();
+              break;
+          case "2":
+              removeKey();
+              break;
+          case "3":
+              updateValue();
+              break;
+          case "4":
+              getValue();
+              break;
+          case "5":
+              listEntries();
+              break;
+          case "6":
+              checkKeyExists();
+              break;
+          case "7":
+              checkValueExists();
+              break;
+          case "8":
+              clearMap();
+              break;
+          case "9":
+              exitCLI();
+              break;
+          default:
+              console.log("Opção inválida. Tente novamente.");
+              performOperation();
+              break;
+      }
+  });
+}
