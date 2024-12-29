@@ -91,6 +91,14 @@ function checkKeyExists() {
   });
 }
 
+function checkValueExists() {
+  rl.question("Digite o valor para verificar: ", (value) => {
+      const exists = Array.from(myMap.values()).includes(value);
+      console.log(exists ? `O valor "${value}" existe no Map.` : `O valor "${value}" não foi encontrado.`);
+      performOperation();
+  });
+}
+
 
 
 function performOperation() {
