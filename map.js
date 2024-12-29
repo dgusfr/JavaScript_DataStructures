@@ -84,6 +84,13 @@ function listEntries() {
   performOperation();
 }
 
+function checkKeyExists() {
+  rl.question("Digite a chave para verificar: ", (key) => {
+      console.log(myMap.has(key) ? `A chave "${key}" existe no Map.` : `A chave "${key}" não foi encontrada.`);
+      performOperation();
+  });
+}
+
 
 
 function performOperation() {
