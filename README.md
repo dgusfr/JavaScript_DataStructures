@@ -40,3 +40,8 @@ Este projeto oferece uma maneira prática e interativa de gerenciar pares chave-
 - **Verificar existência de chave ou valor:** Verifica se uma chave ou valor está presente no Map.
 - **Limpar o Map:** Remove todos os pares chave-valor.
 - **Encerrar:** Finaliza a execução da CLI.
+
+### Dependências
+
+- **Node.js**: Ambiente de execução JavaScript para rodar o projeto.
+- **readline**: Módulo nativo do Node.js utilizado para capturar interações no terminal.
