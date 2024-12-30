@@ -84,3 +84,15 @@ function checkElementExists() {
   });
 }
 
+function listElements() {
+  if (mySet.size === 0) {
+      console.log("O Set está vazio.");
+  } else {
+      console.log("Elementos no Set:");
+      mySet.forEach((element) => {
+          console.log(element);
+      });
+  }
+  performOperation();
+}
+
