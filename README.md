@@ -1,6 +1,6 @@
 # Estrutura de Dados em JavaScript
 
-Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite gerenciar pares chave-valor utilizando a estrutura **Map**. O usuário pode adicionar, remover, atualizar, listar e verificar elementos no Map, diretamente no terminal.
+Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite gerenciar conjuntos de elementos únicos utilizando a estrutura **Set**. O usuário pode adicionar, remover, listar e verificar elementos no Set, diretamente no terminal.
 
 ## Sumário
 
@@ -26,16 +26,15 @@ Uma interface de linha de comando (CLI) desenvolvida em JavaScript que permite g
 
 ## Descrição
 
-Este projeto oferece uma maneira prática e interativa de gerenciar pares chave-valor no terminal. Ele utiliza o módulo `readline` para capturar entradas do usuário e executar ações no **Map**, permitindo manipulações como adicionar, atualizar, remover, listar e verificar a existência de chaves e valores.
+Este projeto oferece uma maneira prática e interativa de gerenciar conjuntos de elementos únicos no terminal. Ele utiliza o módulo `readline` para capturar entradas do usuário e executar ações no **Set**, permitindo manipulações como adicionar, remover, listar e verificar a existência de elementos.
 
 ## Funcionalidades
 
-- **Adicionar pares chave-valor:** Insere uma nova chave com um valor associado no Map.
-- **Remover uma chave:** Elimina uma chave e seu valor associado.
-- **Atualizar valores:** Atualiza o valor de uma chave existente.
-- **Listar todas as entradas:** Exibe todos os pares chave-valor armazenados.
-- **Verificar existência de chave ou valor:** Verifica se uma chave ou valor está presente no Map.
-- **Limpar o Map:** Remove todos os pares chave-valor.
+- **Adicionar elementos:** Insere um novo elemento no Set.
+- **Remover elementos:** Elimina um elemento do Set.
+- **Listar todos os elementos:** Exibe todos os elementos armazenados no Set.
+- **Verificar existência de elementos:** Verifica se um elemento está presente no Set.
+- **Limpar o Set:** Remove todos os elementos do Set.
 - **Encerrar:** Finaliza a execução da CLI.
 
 ### Dependências
