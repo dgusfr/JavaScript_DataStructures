@@ -21,3 +21,34 @@ function startCLI() {
   console.log("Bem-vindo! Comece a gerenciar seu Set.");
   performOperation();
 }
+
+function performOperation() {
+  displayMenu();
+  rl.question("Digite a opção desejada: ", (option) => {
+      switch (option) {
+          case "1":
+              addElement();
+              break;
+          case "2":
+              removeElement();
+              break;
+          case "3":
+              checkElementExists();
+              break;
+          case "4":
+              listElements();
+              break;
+          case "5":
+              clearSet();
+              break;
+          case "6":
+              exitCLI();
+              break;
+          default:
+              console.log("Opção inválida. Tente novamente.");
+              performOperation();
+              break;
+      }
+  });
+}
+
