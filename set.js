@@ -52,3 +52,15 @@ function performOperation() {
   });
 }
 
+function addElement() {
+  rl.question("Digite o elemento para adicionar: ", (element) => {
+      if (mySet.has(element)) {
+          console.log(`O elemento "${element}" já existe no Set.`);
+      } else {
+          mySet.add(element);
+          console.log(`Elemento "${element}" adicionado ao Set.`);
+      }
+      performOperation();
+  });
+}
+
