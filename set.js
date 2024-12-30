@@ -102,3 +102,8 @@ function clearSet() {
   performOperation();
 }
 
+function exitCLI() {
+  console.log("Encerrando o programa. Até logo!");
+  rl.close();
+}
+
