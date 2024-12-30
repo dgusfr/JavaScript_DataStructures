@@ -75,3 +75,12 @@ function removeElement() {
   });
 }
 
+function checkElementExists() {
+  rl.question("Digite o elemento para verificar: ", (element) => {
+      console.log(mySet.has(element)
+          ? `O elemento "${element}" existe no Set.`
+          : `O elemento "${element}" não foi encontrado.`);
+      performOperation();
+  });
+}
+
