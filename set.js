@@ -107,3 +107,6 @@ function exitCLI() {
   rl.close();
 }
 
+startCLI();
+
+
