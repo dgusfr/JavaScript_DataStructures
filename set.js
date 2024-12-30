@@ -14,3 +14,5 @@ function displayMenu() {
   console.log("5. Limpar o Set");
   console.log("6. Sair\n");
 }
+
+const mySet = new Set();
