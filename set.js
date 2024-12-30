@@ -16,3 +16,8 @@ function displayMenu() {
 }
 
 const mySet = new Set();
+
+function startCLI() {
+  console.log("Bem-vindo! Comece a gerenciar seu Set.");
+  performOperation();
+}
