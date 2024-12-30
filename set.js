@@ -96,3 +96,9 @@ function listElements() {
   performOperation();
 }
 
+function clearSet() {
+  mySet.clear();
+  console.log("O Set foi limpo com sucesso.");
+  performOperation();
+}
+
