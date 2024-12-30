@@ -64,3 +64,14 @@ function addElement() {
   });
 }
 
+function removeElement() {
+  rl.question("Digite o elemento para remover: ", (element) => {
+      if (mySet.delete(element)) {
+          console.log(`Elemento "${element}" removido do Set.`);
+      } else {
+          console.log(`Elemento "${element}" não encontrado no Set.`);
+      }
+      performOperation();
+  });
+}
+
